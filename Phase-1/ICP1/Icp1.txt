@@ -1,0 +1,13 @@
+1. Using "-mkdir" a directory is created in the Hadoop File System.
+          hdfs dfs -mkdir /hadoop_files/
+
+2.Using the command " -copyFromLocal" both the files are uploaded to HDFS:
+         hdfs dfs -copyFromLocal /home/cloudera/ICP1/shakespeare.txt  /hadoop_files/
+         hdfs dfs -copyFromLocal /home/cloudera/ICP1/word_list.txt /hadoop_files/
+
+3.Using the "-cat" command, add both the files:
+	hdfs dfs -cat /hadoop_files/shakespeare.txt /hadoop_files/word_list.txt
+               | 
+
+4.Using "-put" command, put into the HDFS files:
+hdfs dfs -put -  /hadoop_files/ICP1_output.txt
